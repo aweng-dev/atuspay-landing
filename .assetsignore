@@ -1,0 +1,17 @@
+# Files in this directory that Cloudflare (Pages / Workers Static Assets)
+# should NOT upload as static assets.
+#
+# Pages auto-skips .git, but Workers Static Assets walks the entire asset
+# directory (including dotfiles), so we list .git explicitly here.
+
+.git/
+.gitignore
+.DS_Store
+
+# Release binaries are served from R2, not from the static site bundle.
+*.apk
+*.aab
+
+# Repo housekeeping
+README*
+*.md

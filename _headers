@@ -1,0 +1,12 @@
+# Cloudflare Pages headers
+# Sensible defaults for the AtusPay landing page.
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# Long cache for fingerprintable static assets
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable

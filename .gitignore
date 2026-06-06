@@ -1,0 +1,19 @@
+# Release artifacts — these live in R2 in production
+*.apk
+*.aab
+
+# macOS
+.DS_Store
+
+# Editor / OS noise
+.idea/
+.vscode/
+*.swp
+*~
+
+# Dependencies (none today, here for safety)
+node_modules/
+
+# Logs / temp
+*.log
+.tmp/

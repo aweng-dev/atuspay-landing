@@ -1,0 +1,4 @@
+# Cloudflare Pages redirects
+# Any APK request hitting the site domain is sent to the R2-backed download host.
+/atuspay-*.apk   https://download.atuspay.co/atuspay-:splat.apk   302
+/atuspay-*.aab   https://download.atuspay.co/atuspay-:splat.aab   302
