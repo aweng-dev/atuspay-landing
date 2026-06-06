@@ -1,4 +1,6 @@
-# Cloudflare Pages redirects
-# Any APK request hitting the site domain is sent to the R2-backed download host.
-/atuspay-*.apk   https://download.atuspay.co/atuspay-:splat.apk   302
-/atuspay-*.aab   https://download.atuspay.co/atuspay-:splat.aab   302
+# Cloudflare redirects
+# APK downloads are served from GitHub Releases (free, CDN-cached, unlimited bandwidth).
+# Stable filename `atuspay-prod.apk` always points at the latest release.
+/atuspay-*.apk   https://github.com/aweng-dev/atuspay-landing/releases/latest/download/atuspay-prod.apk   302
+/atuspay-*.aab   https://github.com/aweng-dev/atuspay-landing/releases/latest/download/atuspay-prod.aab   302
+/download        https://github.com/aweng-dev/atuspay-landing/releases/latest/download/atuspay-prod.apk   302
