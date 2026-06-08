@@ -1272,9 +1272,9 @@ details.faq__item[open] {
   padding-left: 38px;
   font-size: 14.5px;
   color: var(--ink-700);
-  line-height: 1.5;
+  line-height: 1.55;
   min-height: 26px;
-  display: flex; align-items: center; flex-wrap: wrap;
+  display: block;
 }
 .platform__steps li::before {
   counter-increment: step;
@@ -1348,11 +1348,19 @@ details.faq__item[open] {
 
 .modal__pane[hidden] { display: none; }
 .install-steps { list-style: none; margin: 0 0 20px; padding: 0; display: grid; gap: 14px; }
-.install-steps li { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; font-size: 15px; color: var(--ink-700); line-height: 1.5; }
+.install-steps li {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  min-height: 28px;
+  font-size: 15px;
+  color: var(--ink-700);
+  line-height: 1.55;
+}
 .install-steps strong { color: var(--ink-900); }
 .install-steps .num {
-  flex: none;
-  width: 28px; height: 28px; margin-right: 8px;
+  position: absolute; left: 0; top: 0;
+  width: 28px; height: 28px;
   display: grid; place-items: center;
   border-radius: 9px;
   background: var(--brand-600); color: #fff;
